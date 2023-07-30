@@ -25,3 +25,37 @@
 .active{
     border-bottom: 3px solid rgb(3, 180, 250);
 }
+.menus{
+    display: none;
+}
+.menus img{
+    height: 30px;
+    width: 30px;
+}
+
+@media screen and (max-width :710px ) {
+    .options{
+       display: none;
+    }
+    .options ul{
+        flex-direction: column;
+    }
+    .menus{
+        display:block;
+        cursor: pointer;
+    }
+    .options.visible{
+        position: absolute;
+        right: -110px;
+        z-index: 99;
+        top: 70px;
+        background: #000000;
+        display: flex;
+        padding: 1rem;
+        padding-bottom: 2rem;
+        justify-content: center;
+        transition: transform 1s ease-in-out; /* add a transition effect for smooth animation */
+        transform: translateX(-100%);
+    }
+  
+}

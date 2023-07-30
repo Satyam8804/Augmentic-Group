@@ -164,3 +164,31 @@
 
  
 
+  @media screen and (max-width :710px ) {
+    .filter{
+        flex-direction: column;
+        bottom: -50px;
+        width: 70%;
+    }
+    .grid-container{
+        grid-template-columns: auto auto;
+        
+    }
+    .featured-img{
+        padding: 1rem;
+    }
+    .featured{
+        padding-top: 11rem;
+    }
+
+  }
+
+  @media screen and (max-width :500px ) {
+    .grid-container{
+        grid-template-columns: auto ;
+    }
+
+    .filter{
+        bottom: 150px;
+    }
+  }
